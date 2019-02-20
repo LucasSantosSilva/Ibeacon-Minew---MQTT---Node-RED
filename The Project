@@ -1,0 +1,391 @@
+[
+    {
+        "id": "6c5bea5f.bac3c4",
+        "type": "tab",
+        "label": "Sala Servidor",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6debab91.b613f4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#b11d1d",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#790e09",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#b11d1d",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#b11d1d",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#df3c3c",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#b11d1d",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Lucida Sans Unicode,Lucida Grande,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5851022f.52091c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sala Servidor",
+        "tab": "6d6f5f4e.1418a",
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "312450b1.354fe",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "34de35e3.6206da",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "312450b1.354fe",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6d6f5f4e.1418a",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5549fbb0.daf8e4",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Servidor",
+        "broker": "m14.cloudmqtt.com",
+        "port": "15533",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "3",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "6787f1b3.76e6e",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sala Servidor",
+        "tab": "90e8cf37.a2181",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "90e8cf37.a2181",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "82430364.e2d6a",
+        "type": "telegram bot",
+        "z": "",
+        "botname": "BotIbeacon",
+        "usernames": "Avisos_ti_scc_bot",
+        "chatids": "-294851354",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "60",
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "verboselogging": true
+    },
+    {
+        "id": "1d0e253.866d0db",
+        "type": "mqtt in",
+        "z": "6c5bea5f.bac3c4",
+        "name": "Servidor",
+        "topic": "/gw/ac233fc007f7/status",
+        "qos": "0",
+        "broker": "5549fbb0.daf8e4",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "13082fd0.26472"
+            ]
+        ]
+    },
+    {
+        "id": "81736972.afdbb8",
+        "type": "change",
+        "z": "6c5bea5f.bac3c4",
+        "name": "Filtrar Temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "684019ae.2acd98",
+                "819712b7.24964"
+            ]
+        ]
+    },
+    {
+        "id": "13082fd0.26472",
+        "type": "json",
+        "z": "6c5bea5f.bac3c4",
+        "name": "Convert JSON to Object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "81736972.afdbb8",
+                "2764fdc5.3b82d2"
+            ]
+        ]
+    },
+    {
+        "id": "684019ae.2acd98",
+        "type": "ui_gauge",
+        "z": "6c5bea5f.bac3c4",
+        "name": "",
+        "group": "5851022f.52091c",
+        "order": 1,
+        "width": "7",
+        "height": "5",
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "30",
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5800677b.4fb478",
+        "type": "ui_gauge",
+        "z": "6c5bea5f.bac3c4",
+        "name": "",
+        "group": "5851022f.52091c",
+        "order": 0,
+        "width": "6",
+        "height": "4",
+        "gtype": "wave",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ec0000",
+            "#e6e600",
+            "#1b2fe7"
+        ],
+        "seg1": "30",
+        "seg2": "60",
+        "x": 900,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2764fdc5.3b82d2",
+        "type": "change",
+        "z": "6c5bea5f.bac3c4",
+        "name": "Filtrar Umidade",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [
+                "5800677b.4fb478"
+            ]
+        ]
+    },
+    {
+        "id": "755bd89f.511f38",
+        "type": "telegram sender",
+        "z": "6c5bea5f.bac3c4",
+        "name": "BotIbeacon",
+        "bot": "82430364.e2d6a",
+        "x": 890,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "819712b7.24964",
+        "type": "function",
+        "z": "6c5bea5f.bac3c4",
+        "name": "Função determinar temperatura",
+        "func": "\n\nif (msg.payload < 5 && msg.payload > 0){\nmsg.payload = {chatId :-294851354, type : 'message', content : \"Sala servidor com Temperatura Baixa! \" + msg.payload + \" °C\"};\nreturn msg;\n}\nelse {\n  if(msg.payload > 30 && msg.payload < 99){\nmsg.payload = {chatId :-294851354, type : 'message', content : \"Sala servidor com temperatura Alta! \" + msg.payload + \" °C\"};\nreturn msg;\n}\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "f5c2995.d048b68",
+                "755bd89f.511f38"
+            ]
+        ]
+    },
+    {
+        "id": "f5c2995.d048b68",
+        "type": "debug",
+        "z": "6c5bea5f.bac3c4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 890,
+        "y": 480,
+        "wires": []
+    }
+]
